@@ -14,6 +14,10 @@ Fecha: 2026-10-16
 - Comparación describe diferencias; no atribuye causalidad.
 - Recursos materiales quedan explícitamente sin evaluación de suficiencia.
 
+## Automatización
+
+Se añadió `.github/workflows/caif-tests.yml` para ejecutar compilación y pruebas en GitHub Actions ante push, pull request o ejecución manual. En la comprobación realizada desde esta sesión no se devolvieron checks de estado; por ello no se afirma que el workflow haya terminado ni que esté aprobado.
+
 ## Pruebas
 
 **No se ha podido ejecutar `pytest` contra el repositorio remoto en este entorno**: el intento de clonar GitHub desde el entorno de ejecución falló por falta de resolución DNS (`Could not resolve host: github.com`). Por tanto, no se declara una ejecución de pruebas aprobada. Se añadieron pruebas de regresión para que se ejecuten en un entorno con acceso al repositorio.
