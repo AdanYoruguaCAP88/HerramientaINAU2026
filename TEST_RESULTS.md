@@ -1,27 +1,39 @@
-# Registro de pruebas e integración — CAIF v0.3
+# Registro de pruebas e integración — CAIF v0.2/v0.3
 
 Fecha: 2026-10-16
 
-## Estado del repositorio
+## Cambios incorporados tras auditoría
 
-Se subieron los seis archivos de la capa de evidencia v0.3. La integración aún no está completa porque faltan los módulos base v0.2, las configuraciones y los escenarios necesarios para importar y ejecutar el paquete.
+- Restaurados los módulos base de situación, modelo epistemológico, configuración, evaluación, alternativas, comparación, preguntas e informe.
+- Corregida la escala de horas: las horas de unidad se interpretan como total de la unidad de referencia y se escalan por niños/(máximo por grupo × grupos de referencia). Esta interpretación debe confirmarse documentalmente antes de uso real.
+- Separados estado operativo de brecha y estado epistemológico.
+- Registrada la discrepancia entre población declarada y suma de grupos sin corregir silenciosamente el dato de origen.
+- Añadida incertidumbre cuando faltan horas de un rol o no se puede evaluar una restricción.
+- Evitado equiparar “evaluable” con viabilidad institucional demostrada.
+- Integrada la función base de las siete preguntas con la capa de evidencia v0.3.
+- Comparación describe diferencias; no atribuye causalidad.
+- Recursos materiales quedan explícitamente sin evaluación de suficiencia.
 
 ## Pruebas
 
-**No se ha ejecutado pytest contra el contenido actual del repositorio.** Los resultados anteriores de 7 pruebas aprobadas y 3 fallidas correspondían a una extracción temporal previa del documento fuente, no a una ejecución reproducible del repositorio GitHub. No deben interpretarse como estado de las pruebas de esta carga.
+**No se ha podido ejecutar `pytest` contra el repositorio remoto en este entorno**: el intento de clonar GitHub desde el entorno de ejecución falló por falta de resolución DNS (`Could not resolve host: github.com`). Por tanto, no se declara una ejecución de pruebas aprobada. Se añadieron pruebas de regresión para que se ejecuten en un entorno con acceso al repositorio.
 
-## Auditoría estática inicial de la capa v0.3
+Comandos reproducibles:
 
-1. La extensión de `calc/preguntas.py` importa `responder_preguntas` desde el propio módulo. Al fusionarla, debe preservarse la función base de v0.2 para evitar una importación circular o un símbolo inexistente.
-2. Aunque `_MAPA_DIMENSIONES` declara dimensiones para capacidad, recursos y presupuesto, `_dimension_de_brecha` actualmente solo mapea brechas de personal. La recuperación de evidencia para las otras dimensiones todavía no está implementada.
-3. La CLI acepta una lista o un objeto con clave `alternativas`, pero ese cambio debe probarse con el formato real de los escenarios.
-4. Las entradas del repositorio están marcadas por el autor como reportadas y pendientes de verificación contra fuentes originales. El código no verifica por sí mismo la exactitud de las referencias ni valida la transferencia de resultados a Uruguay.
+```bash
+python -m pip install -r requirements.txt
+python -m compileall calc
+python -m pytest -q
+```
 
-## Criterio de aceptación pendiente
+## Limitaciones pendientes
 
-- Restaurar e integrar todos los módulos base v0.2.
-- Fusionar la extensión de preguntas con la función base existente.
-- Incorporar configuraciones y escenarios de prueba.
-- Ejecutar `python -m compileall calc` y `python -m pytest -q`.
-- Revisar cada fallo contra la especificación y documentar el resultado real.
-- Mantener explícito que el prototipo no recomienda ni sustituye el juicio del responsable.
+1. Confirmar documentalmente la semántica de `horas_semana_total_unidad`; la fórmula implementada es una hipótesis explícita, no una validación de norma.
+2. Resolver con el responsable la diferencia entre población declarada (40) y suma de grupos (53).
+3. Incorporar una matriz verificable de requerimientos de recursos materiales.
+4. Validar reglas normativas y fuentes oficiales de cada restricción.
+5. Corregir y auditar la pertinencia de las experiencias del repositorio contra fuentes originales.
+6. Revisar el mapeo de evidencia por dimensión; la recuperación actual se concentra principalmente en brechas de personal.
+7. Ejecutar pruebas y revisar resultados reales antes de considerar aceptado el prototipo.
+
+Estado: **código incorporado; pruebas no ejecutadas; aprobación técnica pendiente**.
