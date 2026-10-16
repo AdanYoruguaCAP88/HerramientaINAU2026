@@ -1,0 +1,239 @@
+[
+  {
+    "id": "ALT_A",
+    "descripcion": "Reorganizar horarios dentro de la estructura existente",
+    "situacion_propuesta": {
+      "id": "CAIF_TBO_40N_A",
+      "ubicacion": "Tacuarembó",
+      "origen": "propuesta",
+      "poblacion_ninos": 40,
+      "grupos": [
+        {
+          "id": "g1",
+          "edad": 0,
+          "modalidad": "EO",
+          "ninos": 14
+        },
+        {
+          "id": "g2",
+          "edad": 1,
+          "modalidad": "4H",
+          "ninos": 12
+        },
+        {
+          "id": "g3",
+          "edad": 2,
+          "modalidad": "4H",
+          "ninos": 12
+        },
+        {
+          "id": "g4",
+          "edad": 3,
+          "modalidad": "4H",
+          "ninos": 15
+        }
+      ],
+      "personal_disponible": [
+        {
+          "rol": "educador",
+          "horas_semana": 100
+        },
+        {
+          "rol": "educador_volante",
+          "horas_semana": 15
+        },
+        {
+          "rol": "psicologo",
+          "horas_semana": 5
+        },
+        {
+          "rol": "trabajador_social",
+          "horas_semana": 5
+        },
+        {
+          "rol": "auxiliar_servicios",
+          "horas_semana": 25
+        },
+        {
+          "rol": "psicomotricista",
+          "horas_semana": 5
+        },
+        {
+          "rol": "cocinero",
+          "horas_semana": 40
+        },
+        {
+          "rol": "administrativo",
+          "horas_semana": 30
+        },
+        {
+          "rol": "maestro",
+          "horas_semana": 40
+        }
+      ],
+      "recursos_materiales": [],
+      "presupuesto_disponible_ur": null,
+      "problema_declarado": "Insuficiencia de personal en roles de apoyo",
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "ALT_B",
+    "descripcion": "Incorporar recursos adicionales",
+    "situacion_propuesta": {
+      "id": "CAIF_TBO_40N_B",
+      "ubicacion": "Tacuarembó",
+      "origen": "propuesta",
+      "poblacion_ninos": 40,
+      "grupos": [
+        {
+          "id": "g1",
+          "edad": 0,
+          "modalidad": "EO",
+          "ninos": 14
+        },
+        {
+          "id": "g2",
+          "edad": 1,
+          "modalidad": "4H",
+          "ninos": 12
+        },
+        {
+          "id": "g3",
+          "edad": 2,
+          "modalidad": "4H",
+          "ninos": 12
+        },
+        {
+          "id": "g4",
+          "edad": 3,
+          "modalidad": "4H",
+          "ninos": 15
+        }
+      ],
+      "personal_disponible": [
+        {
+          "rol": "educador",
+          "horas_semana": 120
+        },
+        {
+          "rol": "educador_volante",
+          "horas_semana": 15
+        },
+        {
+          "rol": "psicologo",
+          "horas_semana": 15
+        },
+        {
+          "rol": "trabajador_social",
+          "horas_semana": 15
+        },
+        {
+          "rol": "auxiliar_servicios",
+          "horas_semana": 30
+        },
+        {
+          "rol": "psicomotricista",
+          "horas_semana": 12
+        },
+        {
+          "rol": "cocinero",
+          "horas_semana": 40
+        },
+        {
+          "rol": "administrativo",
+          "horas_semana": 30
+        },
+        {
+          "rol": "maestro",
+          "horas_semana": 40
+        }
+      ],
+      "recursos_materiales": [],
+      "presupuesto_disponible_ur": null,
+      "problema_declarado": "Insuficiencia de personal en roles de apoyo",
+      "fecha": "2026-10-16"
+    }
+  },
+  {
+    "id": "ALT_C",
+    "descripcion": "Reorganizar recursos compartidos con otros servicios",
+    "situacion_propuesta": {
+      "id": "CAIF_TBO_40N_C",
+      "ubicacion": "Tacuarembó",
+      "origen": "propuesta",
+      "poblacion_ninos": 40,
+      "grupos": [
+        {
+          "id": "g1",
+          "edad": 0,
+          "modalidad": "EO",
+          "ninos": 14
+        },
+        {
+          "id": "g2",
+          "edad": 1,
+          "modalidad": "4H",
+          "ninos": 12
+        },
+        {
+          "id": "g3",
+          "edad": 2,
+          "modalidad": "4H",
+          "ninos": 12
+        },
+        {
+          "id": "g4",
+          "edad": 3,
+          "modalidad": "4H",
+          "ninos": 15
+        }
+      ],
+      "personal_disponible": [
+        {
+          "rol": "educador",
+          "horas_semana": 90
+        },
+        {
+          "rol": "educador_volante",
+          "horas_semana": 10
+        },
+        {
+          "rol": "psicologo",
+          "horas_semana": 8
+        },
+        {
+          "rol": "trabajador_social",
+          "horas_semana": 8
+        },
+        {
+          "rol": "auxiliar_servicios",
+          "horas_semana": 20
+        },
+        {
+          "rol": "psicomotricista",
+          "horas_semana": 4
+        },
+        {
+          "rol": "cocinero",
+          "horas_semana": 40
+        },
+        {
+          "rol": "administrativo",
+          "horas_semana": 30
+        },
+        {
+          "rol": "maestro",
+          "horas_semana": 40
+        }
+      ],
+      "recursos_materiales": [],
+      "presupuesto_disponible_ur": null,
+      "problema_declarado": "Insuficiencia de personal en roles de apoyo",
+      "fecha": "2026-10-16",
+      "notas": [
+        "Requiere verificar disponibilidad con servicios vecinos"
+      ]
+    }
+  }
+]
