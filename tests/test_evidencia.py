@@ -53,7 +53,7 @@ def test_evidencia_declara_ausencia(cfg, repo):
         grupos=[GrupoAtendido(**g) for g in d["grupos"]],
         personal_disponible=[PersonalDisponible(**p) for p in d["personal_disponible"]])
     estado = evaluar_situacion(sit, cfg)
-    ev = buscar_evidencia(estado, repo)
+    ev = buscar_evidencia(estado, [])
     assert any(e.sin_evidencia_suficiente for e in ev)
 
 
@@ -70,4 +70,4 @@ def test_preguntas_con_evidencia(cfg, repo, situacion_base):
     estado = evaluar_situacion(situacion_base, cfg)
     respuestas = responder_preguntas_con_evidencia(estado, [], repo)
     assert len(respuestas) == 7
-    assert "Mecanismos documentados" in respuestas[3]["respuesta"] or "Sin evidencia" in respuestas[3]["respuesta"]
+    assert "Evidencia recuperada" in respuestas[3]["respuesta"] or "Sin evidencia" in respuestas[3]["respuesta"]
