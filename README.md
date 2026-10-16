@@ -1,6 +1,6 @@
 # Herramienta Adaptativa INAU — prototipo CAIF v0.3
 
-Repositorio de prueba del prototipo descrito en `Herramienta Adaptativa.docx`.
+Repositorio de trabajo para el prototipo CAIF v0.3.
 
 ## Objetivo
 
@@ -8,13 +8,24 @@ Estructurar una situación operativa, explicitar brechas e incertidumbres y recu
 
 ## Estado de esta carga
 
-**Carga inicial de repositorio.** La extracción del código desde el documento y la ejecución local detectaron fallos que deben resolverse antes de considerar el prototipo validado: 3 pruebas fallan en la batería de 10 pruebas ejecutadas. No debe usarse para decisiones institucionales reales.
+Se han incorporado los archivos de la capa de evidencia v0.3:
 
-## Pruebas locales
+- `calc/evidencia.py`
+- `repositorio/experiencias.json`
+- `calc/preguntas.py` (extensión de preguntas con evidencia)
+- `calc/__main__.py` (CLI con opción de repositorio)
+- `tests/test_evidencia.py`
+- `SUPUESTOS.md`
+
+**Integración incompleta:** el repositorio no contiene todavía el paquete base v0.2 requerido por estos archivos (entre otros, `calc/modelo.py`, `calc/evaluador.py`, `calc/situacion.py`, `calc/config.py`, `calc/alternativas.py` y `calc/informe.py`), ni las configuraciones y escenarios de prueba. Por eso no sería correcto afirmar que el paquete completo compila o que la batería de pruebas se ejecutó desde este repositorio.
+
+Además, la extensión de preguntas debe fusionarse con la implementación base de `responder_preguntas`; no debe reemplazarla ni importarse a sí misma como si fuera un módulo separado.
+
+## Ejecución prevista cuando esté completo
 
 ```bash
 python -m pip install pytest
 python -m pytest -q
 ```
 
-La carga del paquete fuente completo queda pendiente de completar y verificar contra esta estructura.
+Estado: prototipo en integración; no validado para uso institucional real.
