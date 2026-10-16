@@ -156,6 +156,9 @@ def _registrar_incertidumbres(situacion, config, brechas, restricciones, escenar
             inc.append(Incertidumbre(r.id, Estado.DESCONOCIDO, r.motivo, f"No se puede evaluar: {r.descripcion}"))
     if any(b.diferencia is None for b in brechas):
         inc.append(Incertidumbre("personal_disponible", Estado.DESCONOCIDO, "Faltan horas declaradas para uno o más roles", "La suficiencia de esos roles queda indeterminada"))
+    inc.append(Incertidumbre("recursos_materiales_requeridos", Estado.DESCONOCIDO,
+        "No existe una matriz documentada de requerimientos materiales por modalidad",
+        "La suficiencia de los recursos materiales queda indeterminada"))
     return inc
 
 def evaluar_situacion(situacion: Situacion, config: dict, escenario: Optional[dict] = None) -> EstadoSituacion:
