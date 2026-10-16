@@ -1,0 +1,312 @@
+{
+  "version": "0.1",
+  "fecha_curacion": "2026-10-16",
+  "nota": "Repositorio inicial. Cada experiencia debe leerse con su estado epistemológico. No todas son evaluaciones independientes.",
+  "experiencias": [
+    {
+      "id": "FIN_ECEC_RATIO_2018",
+      "titulo": "Ratios niño-personal en educación y cuidado de primera infancia en Finlandia",
+      "problema_abordado": [
+        "dimensionamiento_personal",
+        "ratios_atencion",
+        "calidad_atencion"
+      ],
+      "intervencion": "Marco normativo que fija ratios máximos niño-personal por grupo de edad en servicios municipales de ECEC.",
+      "contexto": {
+        "pais": "Finlandia",
+        "organismo": "Ministerio de Educación y Cultura / municipios",
+        "poblacion": "primera infancia (0-6)",
+        "territorio": "mixto",
+        "nivel_descentralizacion": "descentralizado",
+        "anio_inicio": 2018,
+        "duracion_meses": null,
+        "requiere_especializacion": true,
+        "requiere_presupuesto_adicional": true
+      },
+      "resultados": [
+        {
+          "tipo": "informe_institucional",
+          "indicador": "ratio niño-personal de contacto",
+          "resultado": "Ratio promedio de aproximadamente 9.4:1 en ECEC",
+          "magnitud": "9.4:1",
+          "periodo_seguimiento_meses": null,
+          "atribucion": "no_establecida",
+          "limitaciones": [
+            "Es un dato de sistema, no una evaluación de impacto."
+          ]
+        }
+      ],
+      "fuente_primaria": "OECD Education at a Glance / informes nacionales finlandeses",
+      "fuentes_secundarias": [
+        "OECD (2018), Engaging Young Children"
+      ],
+      "condiciones_requeridas": [
+        "Sistema municipal con autonomía presupuestal",
+        "Formación profesional especializada disponible en el territorio",
+        "Mecanismo de financiamiento estable que cubra los costos del ratio"
+      ],
+      "riesgos_conocidos": [
+        "En municipios pequeños puede ser difícil sostener ratios sin sobrecosto",
+        "La formación de personal especializado toma años"
+      ],
+      "grado_pertinencia_uruguay": "por_evaluar",
+      "notas": [
+        "El ratio no es automáticamente trasladable: Finlandia tiene un mercado laboral profesional distinto."
+      ]
+    },
+    {
+      "id": "NOR_MENTORING_2025",
+      "titulo": "Mentoría profesional para reducir intención de renuncia en trabajadores de protección infantil en Noruega",
+      "problema_abordado": [
+        "dimensionamiento_personal",
+        "perfiles_rol",
+        "supervision",
+        "retencion_personal"
+      ],
+      "intervencion": "Programa de mentoría profesional estructurada para trabajadores de protección infantil, con acompañamiento de supervisores experimentados.",
+      "contexto": {
+        "pais": "Noruega",
+        "organismo": "Servicios municipales de bienestar infantil (Bufetat / Bufdir)",
+        "poblacion": "trabajadores de protección infantil",
+        "territorio": "mixto",
+        "nivel_descentralizacion": "descentralizado",
+        "anio_inicio": 2020,
+        "duracion_meses": 36,
+        "requiere_especializacion": true,
+        "requiere_presupuesto_adicional": true
+      },
+      "resultados": [
+        {
+          "tipo": "evaluacion_independiente",
+          "indicador": "intención de renunciar (ITQ)",
+          "resultado": "La mentoría por sí sola fue insuficiente para frenar la tendencia creciente a considerar dejar el puesto",
+          "magnitud": "insuficiente",
+          "periodo_seguimiento_meses": 24,
+          "atribucion": "correlacional",
+          "limitaciones": [
+            "Estudio longitudinal, no experimental",
+            "La mentoría se implementó de forma desigual entre servicios",
+            "Dos tercios de los trabajadores reportaron recibir mentoría"
+          ]
+        }
+      ],
+      "fuente_primaria": "Changes in Intention to Quit Among Child Welfare and Protection Workers in Norway (2025), Taylor & Francis",
+      "fuentes_secundarias": [
+        "Lauritzen & Aas (2015)"
+      ],
+      "condiciones_requeridas": [
+        "Supervisores con formación en mentoría",
+        "Tiempo protegido para las sesiones de mentoría",
+        "Cultura organizacional que valore la supervisión reflexiva"
+      ],
+      "riesgos_conocidos": [
+        "La mentoría sin cambios estructurales en carga de trabajo puede no ser suficiente",
+        "Puede convertirse en trámite administrativo si no hay tiempo real"
+      ],
+      "grado_pertinencia_uruguay": "por_evaluar",
+      "notas": [
+        "Relevante para Uruguay por la similitud del desafío de retención, no por el resultado (que fue negativo en cuanto a suficiencia)."
+      ]
+    },
+    {
+      "id": "CHL_FINANCING_2025",
+      "titulo": "Análisis del esquema de financiamiento para programas de protección especializada en Chile",
+      "problema_abordado": [
+        "financiamiento",
+        "modelos_costeo",
+        "calidad_atencion",
+        "sostenibilidad_financiera"
+      ],
+      "intervencion": "Estudio de análisis del esquema de financiamiento para programas del Servicio Nacional de Protección Especializada, con propuestas de rediseño.",
+      "contexto": {
+        "pais": "Chile",
+        "organismo": "Servicio Nacional de Protección Especializada a la Niñez y Adolescencia",
+        "poblacion": "niños, niñas y adolescentes en protección especializada",
+        "territorio": "mixto",
+        "nivel_descentralizacion": "mixto",
+        "anio_inicio": 2025,
+        "duracion_meses": null,
+        "requiere_especializacion": false,
+        "requiere_presupuesto_adicional": false
+      },
+      "resultados": [
+        {
+          "tipo": "informe_institucional",
+          "indicador": "sostenibilidad financiera de programas",
+          "resultado": "Se identificaron desafíos de sostenibilidad y se propusieron orientaciones para un esquema que asegure calidad y oportunidad",
+          "magnitud": "diagnóstico",
+          "periodo_seguimiento_meses": null,
+          "atribucion": "no_establecida",
+          "limitaciones": [
+            "Es un estudio de diseño, no una evaluación de impacto."
+          ]
+        }
+      ],
+      "fuente_primaria": "Centro de Sistemas Públicos, Universidad de Chile (2025)",
+      "fuentes_secundarias": [
+        "Servicio Nacional de Protección Especializada (2025)"
+      ],
+      "condiciones_requeridas": [
+        "Voluntad política para rediseñar el modelo de asignación",
+        "Capacidad técnica para implementar trazabilidad de gasto"
+      ],
+      "riesgos_conocidos": [
+        "Alta rotación de equipos y precariedad laboral asociadas al modelo de licitación",
+        "El sistema basado en subsidios no garantiza continuidad"
+      ],
+      "grado_pertinencia_uruguay": "por_evaluar",
+      "notas": [
+        "Chile tiene un sistema de protección especializada más grande que el uruguayo, pero comparte la tensión entre financiamiento y calidad."
+      ]
+    },
+    {
+      "id": "COE_MDIA_2025",
+      "titulo": "Modelo Barnahus de servicios multidisciplinarios e interinstitucionales para niños víctimas de violencia",
+      "problema_abordado": [
+        "coordinacion_interinstitucional",
+        "supervision",
+        "calidad_atencion"
+      ],
+      "intervencion": "Modelo de Casa de los Niños que reúne justicia, salud, servicios sociales y apoyo bajo un mismo techo, con coordinación interinstitucional formal.",
+      "contexto": {
+        "pais": "Consejo de Europa (múltiples países: Islandia, Suecia, Noruega, etc.)",
+        "organismo": "Consejo de Europa / autoridades nacionales",
+        "poblacion": "niños víctimas o testigos de violencia",
+        "territorio": "mixto",
+        "nivel_descentralizacion": "mixto",
+        "anio_inicio": 2018,
+        "duracion_meses": null,
+        "requiere_especializacion": true,
+        "requiere_presupuesto_adicional": true
+      },
+      "resultados": [
+        {
+          "tipo": "evaluacion_externa",
+          "indicador": "coordinación de investigaciones criminales y de bienestar infantil",
+          "resultado": "El modelo se reconoce como estándar de excelencia para la coordinación de respuestas",
+          "magnitud": "reconocimiento de estándar",
+          "periodo_seguimiento_meses": null,
+          "atribucion": "no_establecida",
+          "limitaciones": [
+            "Reconocimiento institucional no equivale a evidencia de impacto en resultados para niños."
+          ]
+        }
+      ],
+      "fuente_primaria": "Council of Europe (2026), Guidance on Barnahus model reforms",
+      "fuentes_secundarias": [
+        "UNICEF (2026), Multidisciplinary and interagency services"
+      ],
+      "condiciones_requeridas": [
+        "Coordinación formal entre sistemas de justicia, salud y servicios sociales",
+        "Espacio físico compartido o protocolos de derivación ágiles",
+        "Formación de profesionales en entrevista forense y trabajo interdisciplinario"
+      ],
+      "riesgos_conocidos": [
+        "Requiere inversión inicial significativa",
+        "Puede ser difícil de sostener en territorios con baja densidad poblacional"
+      ],
+      "grado_pertinencia_uruguay": "por_evaluar",
+      "notas": [
+        "Uruguay ya tiene el SIPIAV como sistema interinstitucional. La pregunta es si el modelo Barnahus agrega algo al SIPIAV o lo duplica."
+      ]
+    },
+    {
+      "id": "URU_SIPIAV_2017",
+      "titulo": "Sistema Integrado de Protección a la Infancia y Adolescencia contra la Violencia (SIPIAV) en Uruguay",
+      "problema_abordado": [
+        "coordinacion_interinstitucional",
+        "supervision",
+        "calidad_atencion"
+      ],
+      "intervencion": "Sistema interinstitucional con Comités de Recepción Local (CRL) que coordinan respuestas a violencia contra niños y adolescentes a nivel nacional.",
+      "contexto": {
+        "pais": "Uruguay",
+        "organismo": "INAU, MIDES, MSP, ANEP, Intendencias",
+        "poblacion": "niños, niñas y adolescentes",
+        "territorio": "mixto",
+        "nivel_descentralizacion": "centralizado",
+        "anio_inicio": 2017,
+        "duracion_meses": null,
+        "requiere_especializacion": true,
+        "requiere_presupuesto_adicional": false
+      },
+      "resultados": [
+        {
+          "tipo": "informe_institucional",
+          "indicador": "coordinación interinstitucional",
+          "resultado": "Sistema operativo con reuniones quincenales de CRL y articulación con INAU, MIDES, MSP, ASSE, ANEP e Intendencias",
+          "magnitud": "operativo",
+          "periodo_seguimiento_meses": null,
+          "atribucion": "no_establecida",
+          "limitaciones": [
+            "No hay evaluación independiente de resultados del SIPIAV."
+          ]
+        }
+      ],
+      "fuente_primaria": "INAU (2017), Comité Nacional de Gestión SIPIAV",
+      "fuentes_secundarias": [
+        "IMPO, normativa del SIPIAV"
+      ],
+      "condiciones_requeridas": [
+        "Compromiso de las instituciones participantes",
+        "Dispositivos territoriales operativos"
+      ],
+      "riesgos_conocidos": [
+        "La coordinación interinstitucional puede ser lenta",
+        "Requiere recursos humanos dedicados a la coordinación"
+      ],
+      "grado_pertinencia_uruguay": "alta",
+      "notas": [
+        "Es la experiencia uruguaya existente. El módulo la incluye para que el responsable pueda comparar con alternativas internacionales sin perder de vista lo que ya existe."
+      ]
+    },
+    {
+      "id": "KEN_COSTING_2018",
+      "titulo": "Herramienta de costeo y análisis presupuestario para protección infantil en Kenia",
+      "problema_abordado": [
+        "financiamiento",
+        "modelos_costeo",
+        "asignacion_recursos"
+      ],
+      "intervencion": "Desarrollo de una herramienta de costeo que usa datos nacionales y subnacionales para generar costos presupuestarios, brechas de financiamiento y proyecciones a cinco años, con fórmula de asignación basada en población infantil y cobertura geográfica.",
+      "contexto": {
+        "pais": "Kenia",
+        "organismo": "Department of Children Services (DCS) / UNICEF Kenia",
+        "poblacion": "niños en situación de riesgo",
+        "territorio": "mixto",
+        "nivel_descentralizacion": "descentralizado",
+        "anio_inicio": 2018,
+        "duracion_meses": 60,
+        "requiere_especializacion": true,
+        "requiere_presupuesto_adicional": false
+      },
+      "resultados": [
+        {
+          "tipo": "informe_institucional",
+          "indicador": "capacidad de proyección presupuestal",
+          "resultado": "La herramienta permite generar brechas de financiamiento y proyecciones a cinco años",
+          "magnitud": "herramienta desarrollada",
+          "periodo_seguimiento_meses": null,
+          "atribucion": "no_establecida",
+          "limitaciones": [
+            "No hay evaluación de impacto del uso de la herramienta en decisiones presupuestales."
+          ]
+        }
+      ],
+      "fuente_primaria": "UNICEF Kenia (2018), Costing Tool Manual",
+      "fuentes_secundarias": [],
+      "condiciones_requeridas": [
+        "Datos de población infantil y cobertura geográfica confiables",
+        "Capacidad técnica para mantener la herramienta actualizada"
+      ],
+      "riesgos_conocidos": [
+        "Requiere datos que pueden no estar disponibles en todos los países",
+        "Puede quedar desactualizada si no hay mantenimiento institucional"
+      ],
+      "grado_pertinencia_uruguay": "por_evaluar",
+      "notas": [
+        "Es una herramienta de costeo, no una intervención. Útil como referencia metodológica, no como modelo a copiar."
+      ]
+    }
+  ]
+}
