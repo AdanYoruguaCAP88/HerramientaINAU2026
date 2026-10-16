@@ -1,0 +1,156 @@
+{
+  "categoria": "CAIF",
+  "fecha_corte": "2026-10-16",
+  "fuente_estructura": "INAU, llamado CAIF nuevo San Carlos, Detalle de la propuesta (Estructura 2015)",
+  "estado_estructura": "V",
+  "roles_por_grupo": [
+    "educador",
+    "educador_volante",
+    "psicologo",
+    "trabajador_social",
+    "auxiliar_servicios",
+    "psicomotricista"
+  ],
+  "unidades_atencion": [
+    {
+      "id": "EO",
+      "descripcion": "Experiencias Oportunas (taller semanal, 0 a 24 meses)",
+      "grupos": 5,
+      "ninos_por_grupo_min": 12,
+      "ninos_por_grupo_max": 16,
+      "horas_semana_total_unidad": {
+        "educador": 30,
+        "educador_volante": 0,
+        "psicologo": 10,
+        "trabajador_social": 10,
+        "auxiliar_servicios": 5,
+        "psicomotricista": 15
+      }
+    },
+    {
+      "id": "1A_4H",
+      "descripcion": "1 año, 4 horas",
+      "grupos": 2,
+      "ninos_por_grupo_min": 12,
+      "ninos_por_grupo_max": 12,
+      "horas_semana_total_unidad": {
+        "educador": 80,
+        "educador_volante": 20,
+        "psicologo": 3,
+        "trabajador_social": 3,
+        "auxiliar_servicios": 30,
+        "psicomotricista": 6
+      }
+    },
+    {
+      "id": "1A_8H",
+      "descripcion": "1 año, 8 horas",
+      "grupos": 1,
+      "ninos_por_grupo_min": 12,
+      "ninos_por_grupo_max": 12,
+      "horas_semana_total_unidad": {
+        "educador": 80,
+        "educador_volante": 10,
+        "psicologo": 1.5,
+        "trabajador_social": 1.5,
+        "auxiliar_servicios": 22.5,
+        "psicomotricista": 3
+      }
+    },
+    {
+      "id": "2A_4H",
+      "descripcion": "2 años, 4 horas",
+      "grupos": 3,
+      "ninos_por_grupo_min": 12,
+      "ninos_por_grupo_max": 12,
+      "horas_semana_total_unidad": {
+        "educador": 60,
+        "educador_volante": 12,
+        "psicologo": 4.5,
+        "trabajador_social": 4.5,
+        "auxiliar_servicios": 30,
+        "psicomotricista": 6
+      }
+    },
+    {
+      "id": "2A_8H",
+      "descripcion": "2 años, 8 horas",
+      "grupos": 1,
+      "ninos_por_grupo_min": 12,
+      "ninos_por_grupo_max": 12,
+      "horas_semana_total_unidad": {
+        "educador": 40,
+        "educador_volante": 8,
+        "psicologo": 1.5,
+        "trabajador_social": 1.5,
+        "auxiliar_servicios": 15,
+        "psicomotricista": 2
+      }
+    },
+    {
+      "id": "3A_4H",
+      "descripcion": "3 años, 4 horas",
+      "grupos": 3,
+      "ninos_por_grupo_min": 15,
+      "ninos_por_grupo_max": 15,
+      "horas_semana_total_unidad": {
+        "educador": 60,
+        "educador_volante": 6,
+        "psicologo": 6,
+        "trabajador_social": 6,
+        "auxiliar_servicios": 30,
+        "psicomotricista": 3
+      }
+    },
+    {
+      "id": "3A_8H",
+      "descripcion": "3 años, 8 horas",
+      "grupos": 1,
+      "ninos_por_grupo_min": 15,
+      "ninos_por_grupo_max": 15,
+      "horas_semana_total_unidad": {
+        "educador": 40,
+        "educador_volante": 4,
+        "psicologo": 2,
+        "trabajador_social": 2,
+        "auxiliar_servicios": 15,
+        "psicomotricista": 1
+      }
+    }
+  ],
+  "roles_fijos_horas_semana": {
+    "cocinero": 40,
+    "administrativo": 30,
+    "maestro": 40
+  },
+  "totales_declarados_por_fuente": {
+    "educador": 390,
+    "educador_volante": 60,
+    "psicologo": 29,
+    "trabajador_social": 29,
+    "auxiliar_servicios": 148,
+    "psicomotricista": 36,
+    "cocinero": 40,
+    "administrativo": 30,
+    "maestro": 40,
+    "total": 802
+  },
+  "financiamiento": {
+    "unidad": "UR_por_mes",
+    "cupos_convenidos": 204,
+    "transferencia_por_cupo_ur": 5.48,
+    "componente_atencion_ur": 936.4,
+    "componente_basico_ur": 145.8,
+    "complementarios": [
+      {
+        "concepto": "servicio de sereno 56 h",
+        "componentes": 7,
+        "ur_por_componente": 5
+      }
+    ],
+    "transferencia_total_declarada_ur": 1117,
+    "regla_descuento_bajo_minimo": null,
+    "valor_ur_pesos": null,
+    "tarifas_ur_por_hora_rol": null
+  }
+}
