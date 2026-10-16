@@ -112,7 +112,13 @@ def _dimension_de_brecha(b: Brecha) -> list[str]:
         dims.extend(_MAPA_DIMENSIONES["personal"]["insuficiencia_horas"])
     if b.dimension == "personal" and b.motivo and "no contemplado" in b.motivo.lower():
         dims.extend(_MAPA_DIMENSIONES["personal"]["rol_no_contemplado"])
-    return dims
+    if b.dimension == "capacidad":
+        dims.extend(_MAPA_DIMENSIONES["capacidad"]["grupo_fuera_rango"])
+    if b.dimension == "recursos":
+        dims.extend(_MAPA_DIMENSIONES["recursos"]["materiales_insuficientes"])
+    if b.dimension == "presupuesto":
+        dims.extend(_MAPA_DIMENSIONES["presupuesto"]["presupuesto_no_declarado"])
+    return list(dict.fromkeys(dims))
 
 
 def _dimension_de_restriccion(r: Restriccion) -> list[str]:
@@ -205,8 +211,28 @@ def buscar_evidencia(estado: EstadoSituacion, repositorio: list[Experiencia],
                               if not pertinencias else None),
         ))
 
+    # Las incertidumbres presupuestales/materiales también pueden recuperar
+    # evidencia metodológica; esto no convierte la evidencia en recomendación.
+    for i in estado.incertidumbres:
+        if i.variable == "presupuesto_disponible_ur":
+            dims = _MAPA_DIMENSIONES["presupuesto"]["presupuesto_no_declarado"]
+        elif i.variable == "recursos_materiales_requeridos":
+            dims = _MAPA_DIMENSIONES["recursos"]["materiales_insuficientes"]
+        else:
+            continue
+        pertinencias = [_evaluar_pertinencia(exp, d, contexto_uruguay) for exp in repositorio for d in dims]
+        pertinencias = [p for p in pertinencias if p.puntaje > 0]
+        pertinencias.sort(key=lambda x: -x.puntaje)
+        salidas.append(EvidenciaParaBrecha(
+            brecha_elemento=i.variable, dimension="incertidumbre",
+            problemas_a_investigar=dims, experiencias_relevantes=pertinencias,
+            sin_evidencia_suficiente=not pertinencias,
+            mensaje_ausencia=(f"No hay experiencias documentadas en el repositorio para la incertidumbre '{i.variable}'."
+                              if not pertinencias else None),
+        ))
+
     for r in estado.restricciones:
-        if r.estado != "incumple":
+        if r.estado not in {"incumple", "indeterminado"}:
             continue
         dims = _dimension_de_restriccion(r)
         if not dims:
